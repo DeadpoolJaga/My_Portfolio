@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagadeesh Bodavula</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("YnXDs2I3pFtxUh27r"); // EmailJS User ID
+        })();
+    </script>
+</head>
+
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <div class="logo" onclick="redirectToPortfolio()">Jagadeesh Bodavula</div>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li class="theme-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="close-icon" id="close-icon" onclick="toggleMenu()">&times;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="dark-mode">
+        <div class="hero-content">
+            <div class="name-container">
+                <!-- Each letter wrapped in a span for better semantics -->
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">J</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">A</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">G</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">A</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">D</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">E</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">E</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">S</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">H</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">B</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">O</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">D</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">A</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">V</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">U</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">L</span>
+                <span class="letter" onmouseover="rollLetter(this)" onmouseleave="resetLetter(this)">A</span>
+            </div>
+
+            <h2><span id="role">Web Developer</span></h2>
+            <div class="social-icons">
+                <a href="https://github.com/DeadpoolJaga" target="_blank" aria-label="GitHub">
+                    <img src="./github_icon.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/jagadeesh-bodavula/" target="_blank" aria-label="LinkedIn">
+                    <img src="./linkedin_logo.png" alt="LinkedIn">
+                </a>
+            </div>
+            <a href="resume.pdf" download class="resume-link">Download Resume</a>
+            <p class="quote">"Success is not a destination, it's a journey." - Zig Ziglar</p>
+        </div>
+        <div class="hero-image">
+            <img src="./My_Pic.jpg" alt="Jagadeesh Bodavula">
+        </div>
+    </section>    
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p class="lead">Hey there! I'm currently pursuing my Master's in Computer Science at the University of Central Florida, where I'm diving deep into the world of technology and innovation. My passion lies in web development, particularly in the realm of full-stack development.</p>
+                <p class="lead">I thrive on the challenge of seamlessly blending frontend aesthetics with backend functionality to create captivating digital experiences. With a solid foundation in HTML, CSS, React, Node.js (Express), C#, and Python, I'm always eager to push the boundaries of what's possible in the digital landscape.</p>
+                <p class="lead">Driven by a relentless pursuit of innovation, I'm constantly seeking opportunities to excel and make a meaningful impact in the field. My determination, work ethic, and dedication, coupled with my ability to collaborate effectively within a team, make me a valuable asset in any project.</p>
+                <p class="lead">In addition to my proficiency in web development, I bring a wealth of experience in research, particularly in the domains of Machine Learning and Deep Learning. My strong grasp of Data Structures and Algorithms, coupled with my problem-solving skills, allows me to tackle complex challenges with ease.</p>
+                <p class="lead">I'm currently on the lookout for internship or full-time opportunities as a web developer, whether it's frontend, backend, or full-stack development. If you're interested in collaborating or have a project in mind, feel free to reach out to me at <a href="mailto:bodavulajagadeesh@gmail.com">bodavulajagadeesh@gmail.com</a> or give me a call at <a href="tel:386-456-8126">386-456-8126</a>.</p>
+                <p class="lead">Let's build something amazing together!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill-ball">
+                <img src="./skills/html.png" alt="HTML">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/css.png" alt="CSS">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/js.png" alt="JavaScript">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/react.png" alt="React">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/nodejs.png" alt="Node.js">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/python.png" alt="Python">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/cplusplus.png" alt="C++">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/csharp.png" alt="C#">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/postgresql.png" alt="PostgreSQL">
+            </div>
+            <div class="skill-ball">
+                <img src="./skills/git.png" alt="Git">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <h1>Experience</h1>
+        <div class="timeline">
+            <div class="timeline-node">
+                <div class="experience-card">
+                    <h3>Software Engineer</h3>
+                    <h4>Aptean</h4>
+                    <p>India | Jan 2022 - Jun 2023</p>
+                    <ul>
+                        <li>• Spearheaded customization efforts for the Made2Manage product, tailoring solutions to meet individual client needs and significantly enhancing user experience.</li>
+                        <li>• Managed and resolved nearly 50 customer-reported bugs, showcasing a dedication to delivering high quality and error-free software solutions.</li>
+                        <li>• Played a pivotal role in addressing customer concerns, providing timely resolutions, and boosting client retention by around 20%.</li>
+                        <li>• Collaborated with the development team to implement innovative features using Windows Forms, resulting in a 15% increase in product capabilities.</li>
+                        <li>• Utilized C#, ASP.NET, and Microsoft SQL Server to optimize and expand database-driven applications, resulting in a 25% improvement in system performance.</li>
+                        <li>• Conducted 30 successful product customizations, streamlining processes and improving overall efficiency.</li>
+                        <li>• Leveraged Git for version control, ensuring seamless collaboration and efficient management of the codebase.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-node">
+                <div class="experience-card">
+                    <h3>Teaching Assistant</h3>
+                    <h4>University of Central Florida</h4>
+                    <p>Orlando, FL | May 2024 - Aug 2024</p>
+                    <ul>
+                        <li>• Assisted in teaching and grading for Operating Systems (CGS3763-0001) and Systems Administration and Security (CNT4603-CW01) courses at UCF.</li>
+                        <li>• Provided academic support through office hours, lab sessions, and review sessions, enhancing student understanding and performance in core computer science subjects.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./spotify.png" alt="Spotify Player Clone">
+                <h3>Spotify Player Clone</h3>
+                <p class="project-description">A frontend clone of Spotify built using HTML, CSS, and JavaScript, replicating the look and feel of the popular music streaming platform.</p>
+                <a href="https://github.com/DeadpoolJaga/Spotify_Clone" target="_blank" class="project-button">View Code</a>
+            </div>
+            <div class="project-card">
+                <img src="./dice.png" alt="Dice Game">
+                <h3>Dice Game</h3>
+                <p class="project-description">A two-player dice game developed with HTML, CSS, and JavaScript, featuring random dice rolls and dynamic result display.</p>
+                <a href="https://github.com/DeadpoolJaga/Dice-Game" target="_blank" class="project-button">View Code</a>
+            </div>
+            <div class="project-card">
+                <img src="./qr.png" alt="QR-Code Generator">
+                <h3>QR-Code Generator</h3>
+                <p class="project-description">A Node.js (Express) application that generates QR codes for any given domain, directing users to the specified website upon scanning.</p>
+                <a href="https://github.com/DeadpoolJaga/QR-Code-Generator" target="_blank" class="project-button">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <h1>Education</h1>
+        <div class="education-container">
+            <div class="education-card">
+                <img src="./UCF_logo.png" alt="University of Central Florida Logo">
+                <div class="education-details">
+                    <h3>Master of Science in Computer Science</h3>
+                    <p>University of Central Florida, Orlando, FL</p>
+                    <p>GPA: 4.0</p>
+                    <p>Relevant Courses: Design and Analysis of Algorithms, Advanced Computer Architecture, Machine Learning, Current Trends in Machine Learning, Computer Communication Network Administration, Malware Vulnerability Analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="send-button">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Made with 💪 and 🏋️‍♂️ by Jagadeesh Bodavula &copy; 2024</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
